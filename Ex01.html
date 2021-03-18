@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p> Square of <input type = 'number' id = 'inputNum' oninput="calculate()">
+        equals to <span id = 'outputNum' ></span></p>
+
+</body>
+</html>
+<script>
+
+    function calculate(){
+        let val = document.getElementById('inputNum').value;
+        let result = square(val);
+        document.getElementById('outputNum').innerHTML = result;
+    }
+
+    function square(number){
+        number = parseFloat(number);
+        return (number**2);
+    }
+</script>

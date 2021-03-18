@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    let num = prompt('Enter a random integer: ');
+    alert( num + '! = '+ factorial(num));
+
+    function factorial(number){
+        number = parseInt(number);
+        let result = 1;
+        if (number < 0){
+            result = 'None';
+        } else {
+            for (let i = 1; i <= number; i++){
+                result *= i;
+            }
+        }
+        return result;
+    }
+
+</script>

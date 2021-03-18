@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let str = prompt('Enter a random string: ');
+    let val = prompt('Enter a character: ');
+    alert(checkChar(str, val));
+
+    function checkChar(arr, char){
+        let check = false;
+        let count = 0;
+        for (let i = 0; i < arr.length; i++){
+            if (char == arr[i]){
+                check = true;
+                count++;
+            }
+        }
+        if (check){
+            return count;
+        } else {
+            return -1;
+        }
+    }
+</script>

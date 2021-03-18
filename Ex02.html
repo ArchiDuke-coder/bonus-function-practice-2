@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    let rad = prompt('Enter the radius of the circle: ');
+    alert('Perimeter = '+periCal(rad) +', Area = '+areaCal(rad));
+
+    function periCal(radius){
+        radius = parseFloat(radius);
+        let peri = 2*Math.PI*radius;
+        return peri.toFixed(3);
+    }
+
+    function areaCal(radius){
+        radius = parseFloat(radius);
+        let area = Math.PI*(radius**2);
+        return area.toFixed(3);
+    }
+</script>

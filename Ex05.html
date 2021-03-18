@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let num1 = prompt('Enter first number: ');
+    let num2 = prompt('Enter the second number: ');
+    let num3 = prompt('Enter the third number: ');
+    alert('The minimum is '+ findMin(num1, num2, num3));
+
+    function findMin(a,b,c) {
+        a = parseFloat(a);
+        b = parseFloat(b);
+        c = parseFloat(c);
+        let min = a;
+        if (b < min) {
+            min = b;
+        }
+        if (c < min) {
+            min = c;
+        }
+        return min;
+    }
+
+</script>

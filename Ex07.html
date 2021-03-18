@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = 5;
+    let b = 10;
+    console.log('a = ', a,' b = ', b);
+    let res = swap(a,b);
+    a = res[0];
+    b = res[1];
+    console.log('a = ', a,' b = ', b);
+
+    function swap(a,b){
+        let val1 = a;
+        let val2 = b;
+        return [val2, val1];
+    }
+</script>

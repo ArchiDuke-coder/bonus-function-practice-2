@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let size = parseInt(prompt("Chọn kích thước dãy: "));
+    let list = [];
+    for (let i = 0; i < size; i++){
+        let int = Math.floor(Math.random()*10000);
+        list.push(int);
+    }
+    document.write(list + '    sẽ được đảo thành <br/><br/>'+ reverseList(list));
+
+    function reverseList(arr){
+        return arr.reverse();
+    }
+</script>
